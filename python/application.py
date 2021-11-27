@@ -1,6 +1,5 @@
 import asyncio
 import websockets
-
 from raw_message_handler import RawMessageHandler
 
 

@@ -1,5 +1,4 @@
 import tkinter
-
 from tk_totem_square_data import TkTotemSquareData
 
 

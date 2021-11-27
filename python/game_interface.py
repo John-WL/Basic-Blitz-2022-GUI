@@ -1,8 +1,6 @@
 from __future__ import annotations
-
 from dataclasses import dataclass
 from typing import List, Literal, Tuple
-
 from dataclasses_json import dataclass_json
 
 

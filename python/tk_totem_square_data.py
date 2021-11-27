@@ -1,6 +1,3 @@
-import tkinter
-
-
 def rectangle_coordinates_from_coordinate_pair(coordinate_pair, canvas_height):
     x = coordinate_pair[0]
     y = coordinate_pair[1]

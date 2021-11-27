@@ -1,9 +1,6 @@
-import asyncio
 import json
-
 import websockets
-
-from game_interface import Answer, GameMessage, TotemAnswer
+from game_interface import TotemAnswer
 from totem_displayer import TotemDisplayer
 
 
@@ -21,7 +18,7 @@ class RawMessageHandler:
         self.displayer = TotemDisplayer()
 
     async def run(self, raw_message, unused):
-        async with websockets.connect(self.uri) as websocket:
+        async with websockets.connect(self.uri):
             try:
                 await self.receive_message(raw_message)
             except websockets.ConnectionClosedError:
