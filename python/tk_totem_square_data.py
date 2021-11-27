@@ -23,7 +23,7 @@ def rectangle_color_from_shape(shape):
     if shape == "T":
         return 'yellow'
     if shape == "S":
-        return 'magenta'
+        return 'red'
     if shape == "Z":
         return 'blue'
 
