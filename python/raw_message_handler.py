@@ -1,3 +1,4 @@
+import asyncio
 import json
 
 import websockets
@@ -35,4 +36,3 @@ class RawMessageHandler:
             elif message_type == 'GAMESTATE':
                 totem_answers = parse_totems(message['actions']['totems'])
                 self.displayer.display(totem_answers)
-                websocket.close()
