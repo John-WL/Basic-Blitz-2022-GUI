@@ -13,4 +13,4 @@ class TotemDisplayer:
     def display(self, totem_answers):
         self.tk_totem_data.create_rectangles_in_canvas(self.canvas, totem_answers)
         self.canvas.pack()
-        self.tk.mainloop()
+        self.tk.update()
